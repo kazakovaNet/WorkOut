@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--Сначала выводится список комплексов-->
+    <fragment
+        android:id="@+id/list_frag"
+        class="com.hfad.workout.WorkoutListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2" />
+
+    <!--Затем выводится подробная информация об одном комплексе-->
+    <!--Фрагмент будет отображаться в элементе <FrameLayout>.
+    Фрагмент будет добавляться в <FrameLayout> на программном уровне-->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent" />
+</LinearLayout>
+<!--347-->
